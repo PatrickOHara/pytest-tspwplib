@@ -13,7 +13,6 @@ def read(fname):
 
 setup(
     name='pytest-tspwplib',
-    version='0.1.0',
     author="Patrick O'Hara",
     author_email='pohara@turing.ac.uk',
     maintainer="Patrick O'Hara",
@@ -25,7 +24,7 @@ setup(
     py_modules=['pytest_tspwplib'],
     python_requires='>=3.5',
     install_requires=[
-        "tspwplib>=0.1",
+        "tspwplib",
         "pytest>=3.5.0",
     ],
     classifiers=[
@@ -50,4 +49,6 @@ setup(
             'tspwplib = pytest_tspwplib',
         ],
     },
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
 )
