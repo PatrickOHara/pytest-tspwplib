@@ -22,7 +22,7 @@ setup(
     description='A simple plugin to use with tspwplib',
     long_description=read('README.rst'),
     py_modules=['pytest_tspwplib'],
-    python_requires='>=3.5',
+    python_requires='>=3.6',
     install_requires=[
         "tspwplib",
         "pytest>=3.5.0",
@@ -34,7 +34,6 @@ setup(
         'Topic :: Software Development :: Testing',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
