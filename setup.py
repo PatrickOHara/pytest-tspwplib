@@ -20,7 +20,7 @@ setup(
     license='MIT',
     url='https://github.com/PatrickOHara/pytest-tspwplib',
     description='A simple plugin to use with tspwplib',
-    long_description=read('README.rst'),
+    long_description="",
     py_modules=['pytest_tspwplib'],
     python_requires='>=3.6',
     install_requires=[
