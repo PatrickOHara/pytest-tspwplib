@@ -1,5 +1,5 @@
 # pytest-tspwplib
 
-[Read the docs]()
+[Read the docs](https://PatrickOHara.github.io/pytest-tspwplib/)
 
 
