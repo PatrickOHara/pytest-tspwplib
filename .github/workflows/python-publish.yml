@@ -15,6 +15,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO_OWNER: anothrNick
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
