@@ -4,7 +4,7 @@
 import os
 from pathlib import Path
 import pytest
-from tspwplib.types import Alpha, Generation, InstanceName
+from tspwplib.types import Alpha, Generation, GraphName
 
 def pytest_addoption(parser):
     """Options for filepaths for pytest-tspwplib"""
@@ -45,9 +45,9 @@ def oplib_root(request) -> Path:
 @pytest.fixture(
     scope="function",
     params=[
-        Generation.one,
-        Generation.two,
-        Generation.three,
+        Generation.gen1,
+        Generation.gen2,
+        Generation.gen3,
     ],
 )
 def generation(request) -> Generation:
@@ -65,12 +65,12 @@ def alpha(request) -> Alpha:
 @pytest.fixture(
     scope="function",
     params=[
-        InstanceName.eil76,
-        InstanceName.st70,
-        InstanceName.rat195,
+        GraphName.eil76,
+        GraphName.st70,
+        GraphName.rat195,
     ],
 )
-def instance_name(request) -> InstanceName:
+def graph_name(request) -> GraphName:
     """Loop through valid instance names"""
     return request.param
 
