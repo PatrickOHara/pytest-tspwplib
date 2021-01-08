@@ -4,7 +4,7 @@
 import os
 from pathlib import Path
 import pytest
-from tspwplib.types import Alpha, Generation, GraphName
+from tspwplib import Alpha, Generation, GraphName
 
 def pytest_addoption(parser):
     """Options for filepaths for pytest-tspwplib"""

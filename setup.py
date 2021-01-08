@@ -24,7 +24,7 @@ setup(
     py_modules=['pytest_tspwplib'],
     python_requires='>=3.6',
     install_requires=[
-        "tspwplib",
+        "tspwplib>=0.4.1",
         "pytest>=3.5.0",
     ],
     classifiers=[
