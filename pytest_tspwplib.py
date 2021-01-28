@@ -57,9 +57,9 @@ def generation(request) -> Generation:
 
 
 @pytest.fixture(scope="function", params=[Alpha.fifty])
-def alpha(request) -> Alpha:
+def alpha(request) -> int:
     """Alpha values"""
-    return request.param
+    return request.param.value
 
 
 @pytest.fixture(
