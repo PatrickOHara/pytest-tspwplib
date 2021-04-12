@@ -11,14 +11,14 @@ def pytest_addoption(parser):
     group = parser.getgroup('tspwplib')
     group.addoption(
         "--tsplib-root",
-        default=os.environ.get("TSPLIB_ROOT"),
+        default=os.getenv("TSPLIB_ROOT"),
         required=False,
         type=str,
         help="Filepath to tsplib95 directory",
     )
     group.addoption(
         "--oplib-root",
-        default=os.environ.get("OPLIB_ROOT"),
+        default=os.getenv("OPLIB_ROOT"),
         required=False,
         type=str,
         help="Filepath to oplib directory",
