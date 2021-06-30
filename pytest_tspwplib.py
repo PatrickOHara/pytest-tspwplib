@@ -67,7 +67,7 @@ def alpha(request) -> int:
     params=[
         GraphName.eil76,
         GraphName.st70,
-        GraphName.rat195,
+        GraphName.att48,
     ],
 )
 def graph_name(request) -> GraphName:
